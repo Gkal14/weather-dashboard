@@ -21,7 +21,7 @@ body{
 
 .input{
 text-align: center;
-margin: 100px 0;
+margin: 50px 0;
 }
 
 input[type="text"] {
@@ -33,4 +33,20 @@ input[type="text"] {
     font-size: 20px;
     border: none;
     border-radius: 2px;
+    padding: 10px 10px;
+}
+
+input[type="submit"] {    
+    height:50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-family: spartan;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+}
+
+.display{
+    text-align: center;
 }
