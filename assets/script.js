@@ -5,6 +5,7 @@ var cityName=document.querySelector('.cityName')
 // variables to be displayed
 var cityName=document.querySelector('.cityName')
 var description=document.querySelector('.description')
+var icon=document.querySelector('.icon')
 var temp=document.querySelector('.temp')
 var humid=document.querySelector('.humid')
 var wind=document.querySelector('.wind')
@@ -29,6 +30,22 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&ap
     description.innerHTML= "Description: " + descriptionValue;
     wind.innerHTML= "wind speed: " + windValue;
     humid.innerHTML= "humidity: " + humidValue;
+
+    var long = data['coord']['lon'];
+    var lat = data['coord']['lat'];
+
+
+    // get coordinates from input and call another api for extra data
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+long+'&appid=d181a9b55d72cfbb2265fd5aaf6c7c54')
+    .then(information=>information.json())
+
+    .then(data=>{
+        // console.log(data)
+        var uvValue = data['current']['uvi'];
+        uv.innerHTML= "UV Index: " + uvValue;
+    })
+
+ console.log(data) 
 
 })
 

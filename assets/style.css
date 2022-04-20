@@ -21,12 +21,11 @@ body{
 
 .input{
 text-align: center;
-margin: 50px 0;
 }
 
 input[type="text"] {
     height:50px;
-    width: 600px;
+    width: 200px;
     background: #e7e7e7;
     font-family: spartan;
     font-weight: bold;
@@ -49,4 +48,13 @@ input[type="submit"] {
 
 .display{
     text-align: center;
+    line-height: 40px;
+    border: solid 2px black;
+    float: right;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
