@@ -10,4 +10,4 @@ Below is a screenshot  and a link to the deployed application:
 
 ![screenshot](./assets/screenshot.png)
 
-Application link:
+Application link: https://gkal14.github.io/weather-dashboard/
