@@ -20,14 +20,14 @@
       <br>
 
     <div class="input">
-        <input type="text" id="search" class="inputValue" placeholder="Choose a city.." value="">
+        <input type="text" id="search" class="inputValue" placeholder="Type a city.." value="">
         <input id="searchButton" type="submit" value="Submit" class="button">
         <br>
        
     </div>
  
 <!-- Weather display -->
-<div class="col-lg-8 px-2 py-2 border">
+<div class="col-lg-8 px-2 py-2 border hide" id="weather-today">
   <br>
   <p class="text-center" id="weather">Weather today</p>
   <br>
@@ -45,20 +45,53 @@
 </div>
 
 <!-- 5 day forecast -->
-<div class="container-fluid" id="five-day">
+<div class="container-fluid hide" id="five-day">
   <br>
   <h2 id="title">5-Day Forecast</h2>
   <br>
-  <div class="card-list" id="cardList"></div>
     <div class="day-card" id="showFive">
-
+      <div class="dayOne">
+        <p class="date1"></p>
+        <img class="icon1"/>
+        <p class="temp1"></p>
+        <p class="humid1"></p>
+        <p class="wind1"></p>
+      </div>
+      <div class="dayTwo">
+        <p class="date2"></p>
+        <img class="icon2"/>
+        <p class="temp2"></p>
+        <p class="humid2"></p>
+        <p class="wind2"></p>
+      </div>
+      <div class="dayThree">
+        <p class="date3"></p>
+        <img class="icon3"/>
+        <p class="temp3"></p>
+        <p class="humid3"></p>
+        <p class="wind3"></p>
+      </div>
+      <div class="dayFour">
+        <p class="date4"></p>
+        <img class="icon4"/>
+        <p class="temp4"></p>
+        <p class="humid4"></p>
+        <p class="wind4"></p>
+      </div>
+      <div class="dayFive">
+        <p class="date5"></p>
+        <img class="icon5"/>
+        <p class="temp5"></p>
+        <p class="humid5"></p>
+        <p class="wind5"></p>
+      </div>
     </div>
 </div>
 
     <!-- div for search history -->
-    <!-- <div class="container-fluid" id="searchHistory">
+    <div class="container-fluid hide" id="searchHistory">
       <br>
-      <h5>Your search history:</h5>
+      <h5>Your search history</h5>
       <br>
       <div class="card" id="searchList">
         <div class="card-list" id="cityList"></div>
@@ -66,7 +99,7 @@
 
       </div>
   </div>
-</div> -->
+</div>
 
 </body>
 
