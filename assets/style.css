@@ -26,7 +26,7 @@ margin-left: 5px;
 
 input[type="text"] {
     height:50px;
-    width: 200px;
+    width: 350px;
     background: #e7e7e7;
     font-family: spartan;
     font-weight: bold;
@@ -45,6 +45,7 @@ input[type="submit"] {
     font-size: 20px;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .display{
@@ -58,4 +59,21 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+}
+
+.icon {
+    width: 6%;
+}
+
+/* UV background colours */
+.green-background {
+    background-color: green;
+}
+
+.orange-background {
+    background-color: orange;
+}
+
+.red-background {
+    background-color: red;
 }
