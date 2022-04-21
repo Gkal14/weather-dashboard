@@ -123,4 +123,16 @@ input[type="submit"] {
     width: 40%;
 }
 
+@media (max-width: 1250px){
+
+    .day-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        flex-direction: column;
+    
+    }
+}
+
 
