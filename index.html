@@ -8,19 +8,27 @@
     <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
   </head>
 
-  <body>
+  <body id="background">
     <header>
         <h1 class="header">Welcome to your weather dashboard</h1>
     </header>
-<div class="search">
-
+<div class="container-fluid">
+    <div class="row border myContainer">
+      <div class="col-lg-4 bg-light border" id="citySearch">
+      <br>
+        <h4>Search for a city below</h4>
+      <br>
+  <form role="form">
     <div class="input">
-        <input type="text" class="inputValue" placeholder="Choose a city..">
-        <input type="submit" value="Submit" class="button">
-        <ul id="history"></ul>
+        <input type="text" id="search" class="inputValue" placeholder="Choose a city..">
+        <input id="searchButton" type="submit" value="Submit" class="button">
+        <br>
+        
     </div>
+  </form>
+    
 
-    <div class="display">
+    <!-- <div class="display">
         <h1 class="cityName"></h1>
         <p class="description"></p>
         <p class="icon"></p>
@@ -29,10 +37,46 @@
         <p class="wind"></p>
         <p class="uv"></p>
 
+    </div> -->
+
+    <!-- div for search history -->
+    <div class="container-fluid" id="searchHistory">
+        <br>
+        <h5>Your search history:</h5>
+        <br>
+        <div class="card" id="searchList">
+          <div class="card-list" id="cityList"></div>
+            <ul class="list"></ul>
+
+        </div>
     </div>
+  </div>
+  
+<!-- Weather display -->
+<div class="col-lg-8 px-2 py-2 border">
+  <br>
+  <p class="text-center" id="weather">Weather today</p>
+  <br>
+  <h3 id="today" class="text-center"></h3>
+  <div class="container border p-6" id="showResults"></div>
 
 
-  </div>    
+
+</div>
+
+<!-- 5 day forecast -->
+<div class="container-fluid" id="five-day">
+  <br>
+  <h2 id="title">5-Day Forecast</h2>
+  <br>
+  <div class="card-list" id="cardList"></div>
+    <div class="day-card" id="showFive">
+
+    </div>
+</div>
+
+
+
 </body>
 
 

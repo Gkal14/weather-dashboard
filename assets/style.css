@@ -20,7 +20,8 @@ body{
 }
 
 .input{
-text-align: center;
+text-align: left;
+margin-left: 5px;
 }
 
 input[type="text"] {
